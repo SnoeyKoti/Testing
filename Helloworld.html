@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
+    <link  href="style.css" rel="stylesheet"/>
+    <script  srd=" https://www.gstatic.com/firebasejs/8.0.0.0/firebase.app.js"></script>
+    <script  srd=" https://www.gstatic.com/firebasejs/8.0.0.0/firebasejs"></script>
+
+
+
 </head>
+
 <body>
     <header>
     <h1>Welcome to My Landing Page </h1>
@@ -21,7 +28,6 @@
                 <a href="#Section4">Section4</a>
                 <a href="#Section5">Section5</a>
             
-           
                 
         </ul>
     </nav>
@@ -29,7 +35,8 @@
     <main>
         <section id="Section1">
             <h2> Introduction to HTML</h2>
-            <p><HTML is standard markup language for creating web pages></p>
+            
+            <p> Html is standard markup language for creating web pages </p>
             <img src="https://th.bing.com/th/id/OIP.K3gXyZSfZwDLkVFZnd5fPAHaHa?rs=1&pid=ImgDetMain" height="300" width="300" alt="HTML Logo"/>
             <ul>
                 <li>HTML Stands for Hyper Text Markup Language</li>
@@ -42,7 +49,7 @@
             <li><strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong> -HTML headings</li>
             <li><strong>&lt;p&gt;</strong> - Paragraph </li>
             <li><strong>&lt;a&gt;</strong> - Links </li>
-            <li><strong>&lt;;img&gt;</strong> - Images</li>
+            <li><strong>&lt;img&gt;</strong> - Images</li>
             <li><strong>&lt;ul&gt;</strong><strong>&lt;ol&gt;</strong> -List </li>
             </ol>
 
@@ -54,15 +61,20 @@
            <form action="/submit_form" method ="Post">
            <label for="name">Name</label>
            <input type="text"id="name"name="name"><br<><br>
-           <label for="email">Email</label >
+           <label for="email">Email</label>
             <input type ="email" id="name" name ="email"><br><br>
             <label for="Number">Cell Number</label>
             <input type="tel"id="Telephone Number"name ="Telephone"><br><br>
-            <input type="Submit" value="Submit">
+            <input type="Submit" value="Submit"><br><br>
 
            </form>
-           <table border="1">
-            <tr>
+        </br>
+        <!--Savings Table-->
+    <div class = "Savings-Table">
+        <table class="table" border="center">
+
+        <tr>
+         
                 <th>Month</th>
                 <th>Savings</th>
             </tr>
@@ -74,14 +86,77 @@
                 <td>Febuary</td>
                 <td>R12 000</td>
             </tr>
+            <tr>
+                <td>March</td>
+                <td>R15 000</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>R19 000</td>
+            </tr>
+            <tr>
+                <td>May</td>
+                <td>R21 000</td>
+            </tr>
+            <tr>
+                <td>June</td>
+                <td>R22 000</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>R25 000</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>R27 000</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>R30 000</td>
+            </tr>
+            <tr>
+                <td>October</td>
+                <td>R31 000</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>R32 000</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>R35 000</td>
+            </tr>
             </table>
-           </Section>
+
+        </div>
+
+        <section id="Section4">
+            <h2> Upload and View Images</h2>
+            <div class="Upload-Container">
+            
+                <input type="file"id="imagesUpload()" accept="image/*" multiple/>
+                <button class="upload Button"onclick = "uploadImages()">
+                upload Images
+                
+                </button>
+            </div>
+
+            <div id="ImageDisplayArea">
+                <p> No Images Uploaded Yet.</p>
+
+
+           </Section >
 
     </main>
+    <table class = "center">
+    </table>
     <footer>
         <!--footer-->
-        <p>Contact us, We are developers</p>
+        <p>Contact us, We are Developers</p>
     </footer>
+<script src="app.js">
 
+    
+</script>
 </body>
 </html>
